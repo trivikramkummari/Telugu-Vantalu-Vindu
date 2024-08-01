@@ -25,5 +25,6 @@ JavaScript: Interactive features and form handling.
 https://github.com/user-attachments/assets/e2415b3e-063a-4802-ad9b-eb8d6289f6b7
 
 # Access My Web Application Click the Link Below or Scan the QR Code:
-# URL:
+# URL: https://teluguvantaluvindu.netlify.app/
 # QR Code:
+![Telugu-Vantalu-Vindu-QR-Code](https://github.com/user-attachments/assets/70bc81e5-cf16-4d6c-b66e-62a1e5014751)
