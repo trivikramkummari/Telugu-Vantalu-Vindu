@@ -1,0 +1,272 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e6;
+    background-image: url("Restaurant Images/Restaurant\ Background\ Image3.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    background-image: url("Restaurant Images/Restaurant Logo.png");
+    background-size: 150px 150px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 0px 0;
+    text-align: center;
+    animation: fadeIn 0.5s ease forwards, slideInLeft 0.5s ease forwards;
+}
+
+marquee {
+    color: #166f04;
+    background-color: rgba(255, 253, 253, 0.5);
+    animation: fadeIn 0.5s ease forwards, slideInLeft 0.5s ease forwards;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 17px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #390400;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    color: #500707;
+}
+
+.content {
+    display: none;
+    padding: 30px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+    border-radius: 8px;
+    animation: fadeInUp 0.5s ease forwards, slideInLeft 0.5s ease forwards;
+}
+
+.container h2 {
+    text-align: center;
+    color: #532727;
+    animation: fadeInUp 0.5s ease forwards, slideInLeft 0.5s ease forwards;
+}
+
+.container h4 {
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    animation: fadeInUp 0.5s ease forwards, slideInLeft 0.5s ease forwards;
+}
+
+.container a button{
+    cursor: pointer;
+    animation: pulse 1s infinite;
+    background-color: #ff4c4c;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid #333; 
+    transform: translateY(2px);
+    display: inline-block;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.container video {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.container video:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+form {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+    animation: fadeInUp 0.5s ease forwards, slideInLeft 0.5s ease forwards;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #ff0000;
+    color: #341717; 
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: #cf3b3b;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: auto;
+    line-height: 15px;
+    animation: fadeInUp 0.5s ease forwards, slideInLeft 0.5s ease forwards;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333; 
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+    color: #6a761a;
+}
+
+.bounce {
+    animation: bounce 1s ease infinite;
+}
+
+.pulse {
+    animation: pulse 1s ease infinite;
+}
+
+.rotate {
+    animation: rotate 2s linear infinite;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide In Left Animation */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

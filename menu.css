@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e6;
+    background-image: url("Restaurant Images/Restaurant\ Background\ Image4.jpeg");
+    background-repeat: repeat-y;
+    background-size: 100%
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    background-image: url("Restaurant Images/Restaurant Logo.png");
+    background-size: 150px 150px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 0px 0;
+    text-align: center;
+    animation: fadeIn 0.5s ease forwards, slideInLeft 0.5s ease forwards;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 17px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #390400;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    color: #500707;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    background-color: rgba(255, 255, 107, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item h2 {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.menu-item p {
+    color: rgba(0, 0, 0, 0.8);
+    margin: 10px 0;
+}
+
+.menu-item p strong {
+    font-weight: bold;
+    color: #2c1a1a;
+}
+
+.menu-item .tagline {
+    font-style: italic;
+    color: #a30000;
+}
+
+.menu-item {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.menu-item button {
+    cursor: pointer;
+    animation: pulse 1s infinite;
+    background-color: #ff5858;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    border: 2px solid #333; 
+    transform: translateY(2px);
+    display: inline-block;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-item .flip-animation {
+    animation: flip 1s ease-in-out infinite alternate;
+}
+
+.menu-item .pulse-color-animation {
+    animation: pulse-color 2s ease-in-out infinite;
+}
+
+.success-message {
+    display: none;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    margin-top: auto;
+    line-height: 15px;
+    padding: 10px;
+    animation: fadeInUp 0.5s ease forwards, slideInLeft 0.5s ease forwards;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333; 
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+    color: #6a761a;
+}
+
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+
+/* Flip Animation */
+@keyframes flip {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+
+/* Pulse-Color Animation */
+@keyframes pulse-color {
+    0% { color: #800000; }
+    50% { color: #ff0000; }
+    100% { color: #800000; }
+}

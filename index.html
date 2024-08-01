@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telugu Vantalu Vindu</title>
+    <link href="Restaurant Images/Restaurant Logo.png" rel="icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img href="Restaurant Images/Restaurant Logo.png"><br><br><br><br><br>
+            <h1>Welcome to Telugu Vantalu Vindu</h1>
+            <h4>One Taste, One Emotion, One Celebration</h4>
+            <nav>
+                <ul>
+                    <li><a href="#home" onclick="showHome()">Home</a></li>
+                    <li><a href="#menu" onclick="showMenu()">Menu</a></li>
+                    <li><a href="#about" onclick="showAbout()">About Us</a></li>
+                    <li><a href="#contact" onclick="showContact()">Contact</a></li>
+                </ul>
+            </nav><br>
+        </div>
+    </header>
+
+        <marquee behaviour="slide" scrollamount="7" width="100%" height="20px" direction="left" loop="10000">
+    <div class="welcome" style="font-weight: bold;">
+        Welcome to Telugu Vantalu Vindu!, where every bite narrates the spicy tales of Telangana, Andhra Pradesh, and Rayalaseema. Enjoy a 10% discount as you explore the flavors of tradition.
+    </div>
+       </marquee>
+
+    <section id="home" class="content" style="text-align: center;">
+        <div class="container">
+            <h2>Home</h2>
+            <h3>Welcome to Telugu Vantalu Vindu, where we serve authentic Telugu cuisine with traditional flavors.</h3>
+            <video autoplay muted loop id="myVideo">
+            <source src="Restaurant Videos/Restaurant Background Video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section id="menu" class="content">
+        <div class="container" style="text-align: center;">
+            <h2>Menu</h2>
+            <h3>Our traditional menu featuring tangy Pulihora, spicy Royyala Iguru, crispy Sakinalu, and sweet Bobbatlu, crafted with love and tradition.</h3>
+            <a href="menu.html"><button style="font-weight: bold;background-color: rgba(255, 255, 255, 0.8);cursor: pointer">View Menu</button></a>
+            <img src="Restaurant Images/Restaurant Menu PNG.png" alt="Menu Image">
+        </div>
+    </section>
+
+    <section id="about" class="content"style="text-align: center;">
+        <div class="container">
+            <h2>About Us</h2>
+            <img src="Restaurant Images/Restaurant About Us.png" alt="About Us Image">
+        </div>
+    </section>
+
+    <section id="contact" class="content" style="text-align: center;">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>For reservations or inquiries, please call us at: 123-456-7890</p>
+            <div class="social-icons">
+                <a href="mailto:teluguvantaluvindu@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+911234567890" class="social-icon"><i class="fas fa-phone"></i></a>
+                <a href="https://wa.me/1234567890" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://in.linkedin.com/in/teluguvantaluvindu" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://facebook.com/teluguvantaluvindu" class="social-icon"><i class="fab fa-facebook"></i></a>
+            </div>
+            <form id="reservation-form">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter your name" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter your email" id="email" name="email" required><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" placeholder="Enter your phone no" id="phone" name="phone" required><br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+                <button type="submit">Make Reservation</button>
+            </form>
+            <script src="script.js"></script>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <h4>&copy; 2024 Telugu Vantalu Vindu</h4>
+            <h4>#123, Road No:10, Jubilee Hills, Hyderabad, Telangana</h4>
+            <h4>Our Branches</h4>
+            <h4>Jubilee Hills, Banjara Hills, Madhapur, Hi-Tech City, Nanakramguda</h4>
+            <h4>Follow Us</h4>
+            <a href="mailto:teluguvantaluvindu@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+911234567890" class="social-icon"><i class="fas fa-phone"></i></a>
+            <a href="https://wa.me/1234567890" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://in.linkedin.com/in/teluguvantaluvindu" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://facebook.com/teluguvantaluvindu" class="social-icon"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
